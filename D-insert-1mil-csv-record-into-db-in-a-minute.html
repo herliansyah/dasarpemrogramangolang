@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Golang Insert 1 Juta Data dari File CSV Ke Database Server, Menggunakan Teknik Worker Pool, Database Connection Pool, dan Mekanisme Failover - Dasar Pemrograman Golang</title>
+        <title>Golang Insert 1 Juta Rows CSV ke Database Secara Konkuren/Parallel - Dasar Pemrograman Golang</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content>
         <meta name="generator" content="GitBook 3.2.3">
@@ -540,7 +540,7 @@
                 <a href="A-fungsi-sebagai-parameter.html">
             
                     
-                    A.22. Fungsi Sebagai parameter
+                    A.22. Fungsi Sebagai Parameter
             
                 </a>
             
@@ -865,7 +865,7 @@
                 <a href="A-hash-sha1.html">
             
                     
-                    A.47. Hash Sha1
+                    A.47. Hash SHA1
             
                 </a>
             
@@ -1016,12 +1016,25 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.59" data-path="A-waitgroup.html">
+        <li class="chapter " data-level="3.1.59" data-path="A-table-driven-test.html">
+            
+                <a href="A-table-driven-test.html">
+            
+                    
+                    A.59. Table-Driven Test
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.60" data-path="A-waitgroup.html">
             
                 <a href="A-waitgroup.html">
             
                     
-                    A.59. sync.WaitGroup
+                    A.60. sync.WaitGroup
             
                 </a>
             
@@ -1029,12 +1042,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.60" data-path="A-mutex.html">
+        <li class="chapter " data-level="3.1.61" data-path="A-mutex.html">
             
                 <a href="A-mutex.html">
             
                     
-                    A.60. sync.Mutex
+                    A.61. sync.Mutex
             
                 </a>
             
@@ -1042,12 +1055,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.61" data-path="A-go-vendoring.html">
+        <li class="chapter " data-level="3.1.62" data-path="A-go-vendoring.html">
             
                 <a href="A-go-vendoring.html">
             
                     
-                    A.61. Go Vendoring
+                    A.62. Go Vendoring
             
                 </a>
             
@@ -1055,12 +1068,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.62" data-path="A-concurrency-pipeline.html">
+        <li class="chapter " data-level="3.1.63" data-path="A-concurrency-pipeline.html">
             
                 <a href="A-concurrency-pipeline.html">
             
                     
-                    A.62. Concurrency Pattern: Pipeline
+                    A.63. Concurrency Pattern: Pipeline
             
                 </a>
             
@@ -1068,12 +1081,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.63" data-path="A-simplified-fan-in-fan-out-pipeline.html">
+        <li class="chapter " data-level="3.1.64" data-path="A-simplified-fan-in-fan-out-pipeline.html">
             
                 <a href="A-simplified-fan-in-fan-out-pipeline.html">
             
                     
-                    A.63. Concurrency Pattern: Simplified Fan-in Fan-out Pipeline
+                    A.64. Concurrency Pattern: Simplified Fan-in Fan-out Pipeline
             
                 </a>
             
@@ -1081,12 +1094,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.64" data-path="A-pipeline-context-cancellation.html">
+        <li class="chapter " data-level="3.1.65" data-path="A-pipeline-context-cancellation.html">
             
                 <a href="A-pipeline-context-cancellation.html">
             
                     
-                    A.64. Concurrency Pattern: Context Cancellation Pipeline
+                    A.65. Concurrency Pattern: Context Cancellation Pipeline
             
                 </a>
             
@@ -1094,12 +1107,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.65" data-path="A-golang-generics.html">
+        <li class="chapter " data-level="3.1.66" data-path="A-golang-generics.html">
             
                 <a href="A-golang-generics.html">
             
                     
-                    A.65. Go Generics
+                    A.66. Go Generics
             
                 </a>
             
@@ -1177,7 +1190,7 @@
                 <a href="B-template-render-html.html">
             
                     
-                    B.4. Template: Render HTML Template
+                    B.4. Template: Render HTML
             
                 </a>
             
@@ -1190,7 +1203,7 @@
                 <a href="B-template-render-partial-html.html">
             
                     
-                    B.5. Template: Render Partial HTML Template
+                    B.5. Template: Render Partial HTML
             
                 </a>
             
@@ -1281,7 +1294,7 @@
                 <a href="B-form-value.html">
             
                     
-                    B.12. Form Value
+                    B.12. HTTP Form Value
             
                 </a>
             
@@ -1294,7 +1307,7 @@
                 <a href="B-form-upload-file.html">
             
                     
-                    B.13. Form Upload File
+                    B.13. File Upload: ParseMultipartForm
             
                 </a>
             
@@ -1307,7 +1320,7 @@
                 <a href="B-ajax-json-payload.html">
             
                     
-                    B.14. AJAX JSON Payload
+                    B.14. HTTP Request JSON Payload
             
                 </a>
             
@@ -1320,7 +1333,7 @@
                 <a href="B-ajax-json-response.html">
             
                     
-                    B.15. AJAX JSON Response
+                    B.15. HTTP Response: JSON
             
                 </a>
             
@@ -1333,7 +1346,7 @@
                 <a href="B-ajax-multi-upload.html">
             
                     
-                    B.16. AJAX Multiple File Upload
+                    B.16. Multiple File Upload: MultipartReader
             
                 </a>
             
@@ -1419,12 +1432,103 @@
             
         </li>
     
-        <li class="chapter " data-level="4.1.23" data-path="B-server-handler-http-request-cancellation.html">
+        <li class="chapter " data-level="4.1.23" data-path="B-httptest-handler-testing.html">
+            
+                <a href="B-httptest-handler-testing.html">
+            
+                    
+                    B.23. Handler Testing (net/http/httptest)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.24" data-path="B-graceful-shutdown.html">
+            
+                <a href="B-graceful-shutdown.html">
+            
+                    
+                    B.24. Graceful Shutdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.25" data-path="B-http-redirect.html">
+            
+                <a href="B-http-redirect.html">
+            
+                    
+                    B.25. HTTP Redirect
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.26" data-path="B-custom-error-handler.html">
+            
+                <a href="B-custom-error-handler.html">
+            
+                    
+                    B.26. Custom Error Handler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.27" data-path="B-request-body-size-limit.html">
+            
+                <a href="B-request-body-size-limit.html">
+            
+                    
+                    B.27. Request Body Size Limit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.28" data-path="B-http-timeout-handler.html">
+            
+                <a href="B-http-timeout-handler.html">
+            
+                    
+                    B.28. HTTP Timeout Handler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.29" data-path="B-http-handler-context-value.html">
+            
+                <a href="B-http-handler-context-value.html">
+            
+                    
+                    B.29. HTTP Handler Context Value
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.30" data-path="B-server-handler-http-request-cancellation.html">
             
                 <a href="B-server-handler-http-request-cancellation.html">
             
                     
-                    B.23. Server Handler HTTP Request Cancellation
+                    B.30. HTTP Request Cancellation
             
                 </a>
             
@@ -1983,7 +2087,7 @@
                 <a href="D-insert-1mil-csv-record-into-db-in-a-minute.html">
             
                     
-                    D.1. Insert 1 Juta Data dari File CSV Ke Database Server, Menggunakan Teknik Worker Pool, Database Connection Pool, dan Mekanisme Failover
+                    D.1. Insert 1 Juta Rows CSV ke Database Secara Konkuren/Parallel
             
                 </a>
             
@@ -2009,7 +2113,7 @@
                 <a href="D-golang-web-socket-chatting-app.html">
             
                     
-                    D.3. Web Socket: Chatting App
+                    D.3. Web Socket Chatting App
             
                 </a>
             
@@ -2052,7 +2156,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".">D.1. Insert 1 Juta Data dari File CSV Ke Database Server, Menggunakan Teknik Worker Pool, Database Connection Pool, dan Mekanisme Failover</a>
+        <a href=".">D.1. Insert 1 Juta Rows CSV ke Database Secara Konkuren/Parallel</a>
     </h1>
 </div>
 
@@ -2064,23 +2168,23 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="d1-insert-1-juta-data-dari-file-csv-ke-database-server-menggunakan-teknik-worker-pool-database-connection-pool-dan-mekanisme-failover">D.1. Insert 1 Juta Data dari File CSV Ke Database Server, Menggunakan Teknik Worker Pool, Database Connection Pool, dan Mekanisme Failover.</h1>
-<p>Pada chapter ini kita akan praktek penerapan salah satu teknik concurrent programming di Go yaitu worker pool, dikombinasikan dengan database connection pool, untuk membaca 1 juta rows data dari sebuah file csv untuk kemudian di-insert-kan ke mysql server.</p>
-<p>Pada bagian insert data kita terapkan mekanisme failover, jadi ketika ada operasi insert gagal, maka akan otomatis di recover dan di retry. Jadi idealnya di akhir, semua data, sejumlah satu juta, akan berhasil di-insert.</p>
+                                <h1 id="d1-insert-1-juta-rows-csv-ke-database-secara-konkurenparallel">D.1. Insert 1 Juta Rows CSV ke Database Secara Konkuren/Parallel</h1>
+<p>Pada chapter ini kita akan praktik penerapan salah satu teknik concurrent programming di Go yaitu worker pool, dikombinasikan dengan database connection pool, untuk membaca 1 juta rows data dari sebuah file CSV untuk kemudian di-insert-kan ke MySQL server.</p>
+<p>Pada bagian insert data kita terapkan mekanisme failover, jadi ketika ada operasi insert gagal, maka akan otomatis di-recover dan di-retry. Idealnya di akhir, semua data sejumlah satu juta akan berhasil di-insert.</p>
 <h2 id="d11-penjelasan">D.1.1. Penjelasan</h2>
 <h4 id="&#x25C9;-worker-pool">&#x25C9; Worker Pool</h4>
-<p>Worker pool adalah teknik manajemen goroutine dalam <em>concurrent programming</em> pada Go. Sejumlah worker dijalankan dan masing-masing memiliki tugas yang sama yaitu menyelesaikan sejumlah jobs.</p>
-<p>Dengan metode worker pool ini, maka penggunaan memory dan performansi program akan bisa optimal.</p>
+<p>Worker pool adalah teknik manajemen goroutine dalam concurrent programming pada Go. Sejumlah worker dijalankan dan masing-masing memiliki tugas yang sama yaitu menyelesaikan sejumlah jobs.</p>
+<p>Dengan metode worker pool ini, penggunaan memory dan performa program bisa lebih optimal dibanding menjalankan satu goroutine per job (yang bisa mencapai 1 juta goroutine sekaligus).</p>
 <h4 id="&#x25C9;-database-connection-pool">&#x25C9; Database Connection Pool</h4>
-<p><em>Connection pool</em> adalah metode untuk manajemen sejumlah koneksi database, agar bisa digunakan secara optimal.</p>
-<p>Connection pool sangat penting dalam kasus operasi data yang berhubungan dengan database yang mana concurrent programming diterapkan.</p>
-<p>Karena pada concurrent programming, beberapa proses akan berjalan bersamaan, maka penggunaan 1 koneksi db akan menghambat proses tersebut. Perlu ada beberapa koneksi database, agar goroutine tidak rebutan objek koneksi database.</p>
+<p>Connection pool adalah metode untuk manajemen sejumlah koneksi database agar bisa digunakan secara optimal.</p>
+<p>Connection pool sangat penting dalam kasus operasi data yang berhubungan dengan database di mana concurrent programming diterapkan. Karena beberapa proses berjalan bersamaan, penggunaan 1 koneksi saja akan menghambat proses tersebut. Dengan beberapa koneksi dalam pool, goroutine tidak perlu rebutan satu objek koneksi.</p>
+<p>Go mengelola connection pool secara otomatis lewat package <code>database/sql</code>. Kita cukup atur batas maksimum koneksi via <code>SetMaxOpenConns()</code> dan <code>SetMaxIdleConns()</code>.</p>
 <h4 id="&#x25C9;-failover">&#x25C9; Failover</h4>
-<p>Failover merupakan mekanisme backup ketika sebuah proses gagal. Pada konteks ini, failover mengarah ke proses untuk me-retry operasi insert ketika gagal.</p>
+<p>Failover merupakan mekanisme backup ketika sebuah proses gagal. Pada konteks ini, failover mengarah ke proses untuk me-retry operasi insert ketika ada error, hingga insert berhasil.</p>
 <h2 id="d12-persiapan">D.1.2. Persiapan</h2>
-<p>File <a href="https://blog.majestic.com/development/majestic-million-csv-daily/" target="_blank">majestic-million-csv</a> digunakan sebagai bahan dalam praktek. File tersebut gratis dengan lisensi CCA3. Isinya adalah list dari top website berjumlah 1 juta.</p>
-<p>Silakan download file nya di sini <a href="http://downloads.majestic.com/majestic_million.csv" target="_blank">http://downloads.majestic.com/majestic_million.csv</a>.</p>
-<p>Setelah itu siapkan My SQL database server, create database dan sebuah tabel di dalamnya dengan nama domain.</p>
+<p>File <a href="https://blog.majestic.com/development/majestic-million-csv-daily/" target="_blank">majestic-million-csv</a> digunakan sebagai bahan dalam praktik. File tersebut gratis dengan lisensi CCA3. Isinya adalah list dari top website berjumlah 1 juta.</p>
+<p>Silakan download file-nya di sini: <a href="http://downloads.majestic.com/majestic_million.csv" target="_blank">http://downloads.majestic.com/majestic_million.csv</a>.</p>
+<p>Setelah itu siapkan MySQL database server, buat database dan tabel <code>domain</code> di dalamnya.</p>
 <pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> <span class="hljs-keyword">test</span>;
 <span class="hljs-keyword">USE</span> <span class="hljs-keyword">test</span>;
 <span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> <span class="hljs-keyword">domain</span> (
@@ -2098,35 +2202,35 @@
     PrevRefIPs <span class="hljs-built_in">int</span>
 );
 </code></pre>
-<p>Setelah itu buat project baru, dan sebuah file <code>main.go</code>, dan tempatkan file csv yang sudah didownload dalam folder yang sama.</p>
-<p>Karena di contoh ini saya menggunakan My SQL, maka perlu untuk go get driver RDBMS ini untuk go.</p>
+<p>Setelah itu buat project baru dengan satu file <code>main.go</code>, dan tempatkan file CSV yang sudah didownload dalam folder yang sama.</p>
+<p>Karena contoh ini menggunakan MySQL, perlu install driver-nya terlebih dahulu.</p>
 <pre><code class="lang-bash">go get -u github.com/go-sql-driver/mysql
 </code></pre>
-<p>Jika pembaca ingin menggunakan driver lain, juga silakan.</p>
-<h2 id="d13-praktek">D.1.3. Praktek</h2>
-<h4 id="&#x25C9;-definisi-konstanta">&#x25C9; Definisi Konstanta</h4>
-<p>Ada beberapa konstanta yang perlu dipersiapkan. Pertama connection string untuk komunikasi ke database server. Sesuaikan value nya dengan yang dipergunakan.</p>
-<pre><code class="lang-go"><span class="hljs-keyword">const</span> dbConnString = <span class="hljs-string">&quot;root@/test&quot;</span>
+<h2 id="d13-praktik">D.1.3. Praktik</h2>
+<h4 id="&#x25C9;-definisi-variabel">&#x25C9; Definisi Variabel</h4>
+<p>Ada beberapa variabel konfigurasi yang perlu dipersiapkan.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> (
+    dbConnString   = <span class="hljs-string">&quot;root@/test&quot;</span>
+    dbMaxIdleConns = <span class="hljs-number">4</span>
+    dbMaxConns     = <span class="hljs-number">100</span>
+    totalWorker    = <span class="hljs-number">100</span>
+    csvFile        = <span class="hljs-string">&quot;majestic_million.csv&quot;</span>
+    dataHeaders    = []<span class="hljs-keyword">string</span>{
+        <span class="hljs-string">&quot;GlobalRank&quot;</span>, <span class="hljs-string">&quot;TldRank&quot;</span>, <span class="hljs-string">&quot;Domain&quot;</span>, <span class="hljs-string">&quot;TLD&quot;</span>,
+        <span class="hljs-string">&quot;RefSubNets&quot;</span>, <span class="hljs-string">&quot;RefIPs&quot;</span>, <span class="hljs-string">&quot;IDN_Domain&quot;</span>, <span class="hljs-string">&quot;IDN_TLD&quot;</span>,
+        <span class="hljs-string">&quot;PrevGlobalRank&quot;</span>, <span class="hljs-string">&quot;PrevTldRank&quot;</span>, <span class="hljs-string">&quot;PrevRefSubNets&quot;</span>, <span class="hljs-string">&quot;PrevRefIPs&quot;</span>,
+    }
+)
 </code></pre>
-<p>Lalu jumlah koneksi idle yang diperbolehkan, kita set saja 4, karena nantinya semua connection yg di create akan sibuk untuk bekerja meng-insert data.</p>
-<pre><code class="lang-go"><span class="hljs-keyword">const</span> dbMaxIdleConns = <span class="hljs-number">4</span>
-</code></pre>
-<p>Jumlah maksimum koneksi database dalam pool.</p>
-<pre><code class="lang-go"><span class="hljs-keyword">const</span> dbMaxConns = <span class="hljs-number">100</span>
-</code></pre>
-<p>Jumlah worker yang akan bekerja untuk menjalankan job.</p>
-<pre><code class="lang-go"><span class="hljs-keyword">const</span> totalWorker = <span class="hljs-number">100</span>
-</code></pre>
-<p>Path dari file CSV. Karena file berada satu level dengan <code>main.go</code> maka tulis saja nama file nya.</p>
-<pre><code class="lang-go"><span class="hljs-keyword">const</span> csvFile = <span class="hljs-string">&quot;majestic_million.csv&quot;</span>
-</code></pre>
-<p>Terakhir, siapkan variabel untuk menampung data header dari pembacaan CSV nanti.</p>
-<pre><code class="lang-go"><span class="hljs-keyword">var</span> dataHeaders = <span class="hljs-built_in">make</span>([]<span class="hljs-keyword">string</span>, <span class="hljs-number">0</span>)
-</code></pre>
+<ul>
+<li><code>dbConnString</code> adalah connection string ke MySQL. Sesuaikan dengan konfigurasi lokal.</li>
+<li><code>dbMaxIdleConns</code> adalah jumlah koneksi idle yang diizinkan dalam pool.</li>
+<li><code>dbMaxConns</code> adalah jumlah maksimum koneksi aktif dalam pool.</li>
+<li><code>totalWorker</code> adalah jumlah goroutine worker yang akan berjalan bersamaan.</li>
+<li><code>csvFile</code> adalah nama file CSV yang berada satu folder dengan <code>main.go</code>.</li>
+<li><code>dataHeaders</code> adalah nama kolom tabel, sesuai urutan kolom di CSV (setelah baris header dilewati).</li>
+</ul>
 <h4 id="&#x25C9;-fungsi-buka-koneksi-database">&#x25C9; Fungsi Buka Koneksi Database</h4>
-<p>Buat fungsi untuk buka koneksi database, yg dikembalikan objek database kembalian fungsi <code>sql.Open()</code>.</p>
-<p>Jangan lupa set nilai <code>MaxOpenConns</code> dan <code>MaxIdleConns</code>.</p>
-<p>O iya, untuk yang tidak menggunakan mysql, maka sesuaikan saja nilai argument pertama statement <code>sql.Open()</code>.</p>
 <pre><code class="lang-go"><span class="hljs-keyword">func</span> openDbConnection() (*sql.DB, error) {
     log.Println(<span class="hljs-string">&quot;=&gt; open db connection&quot;</span>)
 
@@ -2141,16 +2245,19 @@
     <span class="hljs-keyword">return</span> db, <span class="hljs-literal">nil</span>
 }
 </code></pre>
-<p>O iya jangan lupa untuk import driver nya.</p>
+<p><code>sql.Open()</code> tidak langsung membuka koneksi, ia hanya memvalidasi argumen dan mempersiapkan pool. Koneksi aktual baru dibuka saat pertama kali digunakan. <code>SetMaxOpenConns()</code> dan <code>SetMaxIdleConns()</code> mengatur batas pool agar tidak membebani server database.</p>
+<p>Jangan lupa import driver-nya secara blank import agar side effect registrasinya berjalan.</p>
 <pre><code class="lang-go"><span class="hljs-keyword">import</span> _ <span class="hljs-string">&quot;github.com/go-sql-driver/mysql&quot;</span>
 </code></pre>
 <h4 id="&#x25C9;-fungsi-baca-csv">&#x25C9; Fungsi Baca CSV</h4>
-<p>Buka file CSV, lalu gunakan objek file untuk membuat objek CSV reader baru.</p>
 <pre><code class="lang-go"><span class="hljs-keyword">func</span> openCsvFile() (*csv.Reader, *os.File, error) {
     log.Println(<span class="hljs-string">&quot;=&gt; open csv file&quot;</span>)
 
     f, err := os.Open(csvFile)
     <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+        <span class="hljs-keyword">if</span> os.IsNotExist(err) {
+            log.Fatal(<span class="hljs-string">&quot;file majestic_million.csv tidak ditemukan. silakan download terlebih dahulu di https://blog.majestic.com/development/majestic-million-csv-daily&quot;</span>)
+        }
         <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>, <span class="hljs-literal">nil</span>, err
     }
 
@@ -2158,13 +2265,10 @@
     <span class="hljs-keyword">return</span> reader, f, <span class="hljs-literal">nil</span>
 }
 </code></pre>
+<p>Fungsi ini membuka file CSV dan mengembalikan objek <code>*csv.Reader</code> untuk dibaca baris per baris, plus objek <code>*os.File</code> agar bisa di-close oleh pemanggil. Pengecekan <code>os.IsNotExist()</code> memberikan pesan error yang lebih informatif jika file belum didownload.</p>
 <h4 id="&#x25C9;-fungsi-menjalankan-workers">&#x25C9; Fungsi Menjalankan Workers</h4>
-<p>Ok, sekarang kita mulai masuk ke aspek konkurensi dari pembahasan ini. Siapkan fungsi yang isinya men-dispatch beberapa goroutine sejumlah <code>totalWorker</code>.</p>
-<p>Tiap-tiap goroutine tersebut adalah worker atau pekerja, yang tugasnya nanti akan meng-insert data ke database.</p>
-<p>Saat aplikasi dijalankan, sejumlah 100 worker akan berlomba-lomba menyelesaikan job insert data sejumlah 1 juta data.</p>
-<p>1 job adalah 1 data, maka rata-rata setiap worker akan menyelesaikan operasi insert sekitar 10k. Tapi ini jelasnya tidak pasti karena worker akan berkompetisi dalam penyelesaian job, jadi sangat besar kemungkinan akan ada job yang menyelesaikan lebih dari 10k jobs, ataupun yg di bawah 10k jobs.</p>
 <pre><code class="lang-go"><span class="hljs-keyword">func</span> dispatchWorkers(db *sql.DB, jobs &lt;-<span class="hljs-keyword">chan</span> []<span class="hljs-keyword">interface</span>{}, wg *sync.WaitGroup) {
-    <span class="hljs-keyword">for</span> workerIndex := <span class="hljs-number">0</span>; workerIndex &lt;= totalWorker; workerIndex++ {
+    <span class="hljs-keyword">for</span> workerIndex := <span class="hljs-number">0</span>; workerIndex &lt; totalWorker; workerIndex++ {
         <span class="hljs-keyword">go</span> <span class="hljs-keyword">func</span>(workerIndex <span class="hljs-keyword">int</span>, db *sql.DB, jobs &lt;-<span class="hljs-keyword">chan</span> []<span class="hljs-keyword">interface</span>{}, wg *sync.WaitGroup) {
             counter := <span class="hljs-number">0</span>
 
@@ -2177,15 +2281,12 @@
     }
 }
 </code></pre>
-<p>Bisa dilihat dalam fungsi di atas, di dalam goroutine/worker, isi channel jobs (yang berupa data dari proses pembacaan CSV), didistribusikan ke worker, ke goroutine.</p>
-<p>Fungsi <code>doTheJob()</code> yang nantinya kita buat, isinya adalah operasi insert data ke database server. Setiap satu operasi insert selesai, <code>wg.Done()</code> untuk menandai bahwa 1 job adalah selesai.</p>
-<p>Idealnya di akhir aplikasi akan terjadi pemanggilan <code>wg.Done()</code> sejumlah 1 juta karena ada 1 juta jobs.</p>
+<p>Fungsi ini men-dispatch sejumlah <code>totalWorker</code> goroutine. Setiap goroutine adalah satu worker yang terus memantau channel <code>jobs</code>. Saat ada data masuk, worker mengambil dan memprosesnya lewat <code>doTheJob()</code>. Setelah selesai, <code>wg.Done()</code> dipanggil untuk menandai satu job selesai.</p>
+<p>Perlu diperhatikan bahwa <code>workerIndex</code> dijadikan argumen goroutine, bukan di-capture langsung dari loop. Ini penting agar tiap goroutine mendapat nilai <code>workerIndex</code> yang tepat, bukan nilai terakhir dari perulangan.</p>
 <h4 id="&#x25C9;-fungsi-baca-csv-dan-pengiriman-jobs-ke-worker">&#x25C9; Fungsi Baca CSV dan Pengiriman Jobs ke Worker</h4>
-<p>Proses pembacaan CSV, apapun metodenya pasti yang dijalankan adalah membaca data dari line ke line dari baris paling bawah.</p>
-<blockquote>
-<p>Proses baca satu file tidak bisa di-konkurensi-kan</p>
-</blockquote>
+<p>Proses membaca file CSV bersifat sekuensial, baris demi baris dari atas ke bawah. Ini memang tidak bisa di-konkurensikan, karena <code>csv.Reader</code> membaca stream secara berurutan.</p>
 <pre><code class="lang-go"><span class="hljs-keyword">func</span> readCsvFilePerLineThenSendToWorker(csvReader *csv.Reader, jobs <span class="hljs-keyword">chan</span>&lt;- []<span class="hljs-keyword">interface</span>{}, wg *sync.WaitGroup) {
+    isHeader := <span class="hljs-literal">true</span>
     <span class="hljs-keyword">for</span> {
         row, err := csvReader.Read()
         <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
@@ -2195,8 +2296,8 @@
             <span class="hljs-keyword">break</span>
         }
 
-        <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(dataHeaders) == <span class="hljs-number">0</span> {
-            dataHeaders = row
+        <span class="hljs-keyword">if</span> isHeader {
+            isHeader = <span class="hljs-literal">false</span>
             <span class="hljs-keyword">continue</span>
         }
 
@@ -2211,9 +2312,8 @@
     <span class="hljs-built_in">close</span>(jobs)
 }
 </code></pre>
-<p>Data dibaca dalam perulangan per baris. Pada pembacaan pertama, rows akan ditampung ke variabel <code>dataHeaders</code>. Selanjutnya, data dikirimkan ke worker lewat channel <code>jobs</code>.</p>
-<p>Setelah proses baca data selesai, channel di close. Karena pengiriman dan penerimaan data pada channel bersifat synchronous untuk unbuffered channel. Jadi aman untuk berasumsi bahwa ketika semua data berhasil dikirim, maka semua data tersebut juga berhasil diterima.</p>
-<p>Jika blok kode perulangan dalam fungsi di atas selesai, maka sudah tidak ada lagi operasi kirim terima data, maka kita close channelnya.</p>
+<p>Baris pertama CSV adalah header, dilewati dengan flag <code>isHeader</code>. Baris selanjutnya dikonversi ke <code>[]interface{}</code> dan dikirim ke channel <code>jobs</code>. Setiap pengiriman dibarengi <code>wg.Add(1)</code> agar WaitGroup tahu ada satu job baru yang harus ditunggu.</p>
+<p>Setelah semua baris terbaca (loop selesai), channel <code>jobs</code> di-close. Penutupan ini yang menyebabkan semua worker keluar dari <code>for job := range jobs</code> setelah job terakhir selesai diproses.</p>
 <h4 id="&#x25C9;-fungsi-insert-data-ke-database">&#x25C9; Fungsi Insert Data ke Database</h4>
 <pre><code class="lang-go"><span class="hljs-keyword">func</span> doTheJob(workerIndex, counter <span class="hljs-keyword">int</span>, db *sql.DB, values []<span class="hljs-keyword">interface</span>{}) {
     <span class="hljs-keyword">for</span> {
@@ -2226,6 +2326,12 @@
             }()
 
             conn, err := db.Conn(context.Background())
+            <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+                *outerError = err
+                <span class="hljs-keyword">return</span>
+            }
+            <span class="hljs-keyword">defer</span> conn.Close()
+
             query := fmt.Sprintf(<span class="hljs-string">&quot;INSERT INTO domain (%s) VALUES (%s)&quot;</span>,
                 strings.Join(dataHeaders, <span class="hljs-string">&quot;,&quot;</span>),
                 strings.Join(generateQuestionsMark(<span class="hljs-built_in">len</span>(dataHeaders)), <span class="hljs-string">&quot;,&quot;</span>),
@@ -2233,17 +2339,14 @@
 
             _, err = conn.ExecContext(context.Background(), query, values...)
             <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
-                log.Fatal(err.Error())
-            }
-
-            err = conn.Close()
-            <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
-                log.Fatal(err.Error())
+                *outerError = err
+                <span class="hljs-keyword">return</span>
             }
         }(&amp;outerError)
         <span class="hljs-keyword">if</span> outerError == <span class="hljs-literal">nil</span> {
             <span class="hljs-keyword">break</span>
         }
+        log.Println(<span class="hljs-string">&quot;=&gt; retrying insert, error:&quot;</span>, outerError)
     }
 
     <span class="hljs-keyword">if</span> counter%<span class="hljs-number">100</span> == <span class="hljs-number">0</span> {
@@ -2259,16 +2362,18 @@
     <span class="hljs-keyword">return</span> s
 }
 </code></pre>
-<p>Pada kode di atas bisa dilihat bahwa kode insert dibungkus dalam IIFE dalam sebuah perulangan.</p>
-<p>Kenapa butuh perulangan? keyword <code>for</code> di atas perannya sangat penting. Di sini diterapkan mekanisme failover di mana ketika proses insert gagal akan di recover dan di-retry ulang.</p>
-<p>Nah jadi ketika operasi insert di atas gagal, maka error tetap di tampilkan tapi kemudian diulang kembali insert data yang gagal tadi, hingga sukses.</p>
-<p>O iya, mengenai kode untuk manajemen db connection poll mana ya? sepertinya tidak ada. Yups, memang tidak ada. As per Go official documentation untuk package <code>sql/database</code>, connection pool di manage oleh Go, kita engineer cukup panggil method <code>.Conn()</code> milik <code>*sql.DB</code> untuk mengambil pool item, yang pool item ini bisa berupa connection lama yang di reuse atau connection yang baru dibuat.</p>
+<p>Beberapa hal penting dalam fungsi ini:</p>
+<ul>
+<li>Keseluruhan operasi insert dibungkus dalam IIFE (immediately invoked function expression) di dalam perulangan <code>for</code>. Ini adalah implementasi mekanisme failover: jika insert gagal (<code>outerError != nil</code>), perulangan lanjut dan operasi diulang.</li>
+<li><code>defer func() { recover() }()</code> menangkap panic yang mungkin terjadi dari dalam IIFE dan mengonversinya ke error biasa, agar bisa ditangani oleh mekanisme retry.</li>
+<li><code>db.Conn()</code> mengambil satu koneksi dari pool. Error dari pemanggilan ini perlu dicek, karena jika pool penuh dan semua koneksi sedang dipakai, pemanggilan ini bisa gagal.</li>
+<li><code>defer conn.Close()</code> mengembalikan koneksi ke pool setelah IIFE selesai, baik sukses maupun gagal.</li>
+<li>Query dibentuk secara dinamis menggunakan <code>dataHeaders</code> dan placeholder <code>?</code> sejumlah kolom. Penggunaan placeholder (parameterized query) ini penting untuk menghindari SQL injection.</li>
+</ul>
 <blockquote>
-<p>Conn returns a single connection by either opening a new connection or returning an existing connection from the connection pool. Conn will block until either a connection is returned or ctx is canceled. Queries run on the same Conn will be run in the same database session.<br>Every Conn must be returned to the database pool after use by calling Conn.Close.</p>
+<p><strong>Catatan:</strong> Mekanisme retry di atas tidak memiliki batas percobaan dan tidak ada jeda antar retry. Jika database tidak dapat diakses dalam waktu lama, goroutine akan terus looping tanpa henti. Untuk kebutuhan produksi, tambahkan batas maksimum retry dan exponential backoff.</p>
 </blockquote>
-<p>Btw, di atas juga ada satu fungsi lagi, <code>generateQuestionsMark()</code>, gunanya untuk membantu pembentukan query insert data secara dinamis.</p>
 <h4 id="&#x25C9;-fungsi-main">&#x25C9; Fungsi Main</h4>
-<p>Terakhir, panggil semua fungsi yang sudah dibuat pada main.</p>
 <pre><code class="lang-go"><span class="hljs-keyword">func</span> main() {
     start := time.Now()
 
@@ -2295,22 +2400,32 @@
     fmt.Println(<span class="hljs-string">&quot;done in&quot;</span>, <span class="hljs-keyword">int</span>(math.Ceil(duration.Seconds())), <span class="hljs-string">&quot;seconds&quot;</span>)
 }
 </code></pre>
-<p>Di akhir fungsi main ditambahkan log untuk benchmark performa.</p>
+<p>Alur eksekusinya adalah:</p>
+<ol>
+<li>Buka koneksi database.</li>
+<li>Buka file CSV.</li>
+<li>Buat channel <code>jobs</code> dan WaitGroup.</li>
+<li><code>dispatchWorkers()</code> dijalankan sebagai goroutine agar langsung siap menunggu jobs.</li>
+<li><code>readCsvFilePerLineThenSendToWorker()</code> dijalankan di goroutine utama (blocking): membaca CSV baris demi baris dan mengirim ke <code>jobs</code>.</li>
+<li><code>wg.Wait()</code> menunggu seluruh 1 juta insert selesai sebelum program berhenti.</li>
+</ol>
+<blockquote>
+<p>Channel <code>jobs</code> di sini dibuat tanpa buffer (<code>make(chan []interface{}, 0)</code>). Artinya setiap pengiriman baris CSV akan memblokir sampai ada worker yang mengambilnya. Jika ingin mengurangi kemungkinan reader memblokir terlalu lama, bisa gunakan buffered channel, misalnya <code>make(chan []interface{}, 500)</code>.</p>
+</blockquote>
 <h2 id="d14-eksekusi-program">D.1.4. Eksekusi Program</h2>
-<p>Ok, sekarang mari kita coba eksekusi program-nya.</p>
+<p>Setelah semua siap, jalankan program-nya.</p>
 <p><img src="images/D_insert_1mil_csv_record_into_db_in_a_minute_1_preview.png" alt="Dasar Pemrograman Golang - Preview"></p>
-<p>Nah, bisa dilihat operasi insert selesai dalam waktu sekitar 1 menitan. Saya menggunakan laptop dengan spek berikut untuk run program:</p>
+<p>Bisa dilihat operasi insert selesai dalam waktu sekitar 1 menit. Pengujian dilakukan pada laptop dengan spesifikasi berikut:</p>
 <ul>
-<li>Core i7-8750H 2.20GHz (6 core, 12 logical prosesor)</li>
+<li>Core i7-8750H 2.20GHz (6 core, 12 logical processor)</li>
 <li>RAM 16GB</li>
 <li>SSD</li>
 </ul>
-<p>Kalau diperhatikan, hanya 25.8% utilisasi CPU, dan hanya 12MB saja resource RAM yang dibutuhkan. Di Task Manager CPU usage nya 100% karena My SQL server di lokal saya benar-benar bekerja keras untuk menjalankan operasi insert.</p>
+<p>Utilisasi CPU hanya 25.8% dan RAM hanya 12MB untuk sisi program Go-nya. CPU usage di Task Manager mencapai 100% karena MySQL server lokal yang bekerja keras melayani 100 koneksi insert secara bersamaan.</p>
+<p>Sebagai perbandingan, operasi insert yang sama secara sekuensial (tanpa worker pool dan tanpa connection pool) memakan waktu hingga <strong>20 menit</strong>. Perbedaan performa ini menunjukkan betapa signifikannya penerapan konkurensi untuk kasus seperti ini.</p>
 <blockquote>
-<p>Kecepatan aplikasi sangat tergantung dengan spesifikasi hardware laptop/server yang dipakai.</p>
+<p>Praktik pada chapter ini bersifat POC (Proof of Concept). Untuk kebutuhan produksi, pertimbangkan batched insert (insert beberapa baris dalam satu query), mekanisme retry dengan backoff, serta monitoring terhadap jumlah koneksi database yang aktif.</p>
 </blockquote>
-<p>Kalau dibandingkan dengan operasi insert data secara sekuensial, yang tanpa worker pool dan tanpa db connection pool, memakan waktu hingga <strong>20 MENIT!</strong>. Metode pada chapter ini jauh lebih cepat.</p>
-<p>Praktek pada chapter ini sifatnya adalah POC, jadi sangat mungkin diperlukan penyesuaian untuk kasus nyata. Kode di atas sebenarnya juga masih bisa di optimize lagi dari banyak sisi.</p>
 <hr>
 <ul>
 <li><a href="https://github.com/go-sql-driver/mysql" target="_blank">go-sql-driver/mysql</a>, by Go SQL Driver Team, Mozilla Public License 2.0</li>
@@ -2346,7 +2461,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"D.1. Insert 1 Juta Data dari File CSV Ke Database Server, Menggunakan Teknik Worker Pool, Database Connection Pool, dan Mekanisme Failover","level":"6.1.1","depth":2,"next":{"title":"D.2. Google API Search Dengan Timeout","level":"6.1.2","depth":2,"path":"D-google-api-search.md","ref":"D-google-api-search.md","articles":[]},"previous":{"title":"D. Studi Kasus","level":"6.1","depth":1,"ref":"","articles":[{"title":"D.1. Insert 1 Juta Data dari File CSV Ke Database Server, Menggunakan Teknik Worker Pool, Database Connection Pool, dan Mekanisme Failover","level":"6.1.1","depth":2,"path":"D-insert-1mil-csv-record-into-db-in-a-minute.md","ref":"D-insert-1mil-csv-record-into-db-in-a-minute.md","articles":[]},{"title":"D.2. Google API Search Dengan Timeout","level":"6.1.2","depth":2,"path":"D-google-api-search.md","ref":"D-google-api-search.md","articles":[]},{"title":"D.3. Web Socket: Chatting App","level":"6.1.3","depth":2,"path":"D-golang-web-socket-chatting-app.md","ref":"D-golang-web-socket-chatting-app.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","-lunr","docsearch-v3","disqus","meta","sitemap"],"pluginsConfig":{"docsearch":{"appId":"ZV0MXP90GF","apiKey":"f7431c709385fe300da4c2ef2093c43c","indexName":"dasarpemrogramangolang-novalagung"},"disqus":{"useIdentifier":false,"shortName":"dasarpemrogramangolang"},"meta":{"name":"","content":"","data":[{"name":"google-site-verification","content":"UZnxS2Dk3fm2_Elms3a__56Q_oQ3sQ1h0SVXXlHSmbE"},{"name":"og:image","content":"https://dasarpemrogramangolang.novalagung.com/images/cover_fb_share.jpg"},{"name":"twitter:image","content":"https://dasarpemrogramangolang.novalagung.com/images/cover_fb_share.jpg"}]},"docsearch-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://dasarpemrogramangolang.novalagung.com/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":10,"left":10,"top":56,"bottom":56}},"styles":{"website":"style-website-v4.css"}},"file":{"path":"D-insert-1mil-csv-record-into-db-in-a-minute.md","mtime":"2025-07-18T07:03:36.026Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-07-18T07:04:34.425Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"D.1. Insert 1 Juta Rows CSV ke Database Secara Konkuren/Parallel","level":"6.1.1","depth":2,"next":{"title":"D.2. Google API Search Dengan Timeout","level":"6.1.2","depth":2,"path":"D-google-api-search.md","ref":"D-google-api-search.md","articles":[]},"previous":{"title":"D. Studi Kasus","level":"6.1","depth":1,"ref":"","articles":[{"title":"D.1. Insert 1 Juta Rows CSV ke Database Secara Konkuren/Parallel","level":"6.1.1","depth":2,"path":"D-insert-1mil-csv-record-into-db-in-a-minute.md","ref":"D-insert-1mil-csv-record-into-db-in-a-minute.md","articles":[]},{"title":"D.2. Google API Search Dengan Timeout","level":"6.1.2","depth":2,"path":"D-google-api-search.md","ref":"D-google-api-search.md","articles":[]},{"title":"D.3. Web Socket Chatting App","level":"6.1.3","depth":2,"path":"D-golang-web-socket-chatting-app.md","ref":"D-golang-web-socket-chatting-app.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","-lunr","docsearch-v3","disqus","meta","sitemap"],"pluginsConfig":{"docsearch":{"appId":"ZV0MXP90GF","apiKey":"f7431c709385fe300da4c2ef2093c43c","indexName":"dasarpemrogramangolang-novalagung"},"disqus":{"useIdentifier":false,"shortName":"dasarpemrogramangolang"},"meta":{"name":"","content":"","data":[{"name":"google-site-verification","content":"UZnxS2Dk3fm2_Elms3a__56Q_oQ3sQ1h0SVXXlHSmbE"},{"name":"og:image","content":"https://dasarpemrogramangolang.novalagung.com/images/cover_fb_share.jpg"},{"name":"twitter:image","content":"https://dasarpemrogramangolang.novalagung.com/images/cover_fb_share.jpg"}]},"docsearch-v3":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"https://dasarpemrogramangolang.novalagung.com/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":10,"left":10,"top":56,"bottom":56}},"styles":{"website":"style-website-v4.css"}},"file":{"path":"D-insert-1mil-csv-record-into-db-in-a-minute.md","mtime":"2026-10-19T15:05:51.244Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-10-19T15:06:51.428Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -2368,7 +2483,7 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-disqus/plugin.js?3.2025.07.18.070455"></script>
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js?3.2026.10.19.150714"></script>
         
     
         
@@ -2380,7 +2495,7 @@
         
     
 
-    <div style="position: fixed; top: 5px; right: 30px; padding: 10px; background-color: rgba(255, 255, 255, 0.7);">
+    <div style="margin-left: 50px; margin-right: 20px; position: fixed; top: 5px; right: 30px; padding: 10px; background-color: rgba(255, 255, 255, 0.7);">
 			<a class="github-button" href="https://github.com/sponsors/novalagung" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-heart" data-size="large" aria-label="Sponsor @novalagung on GitHub">Sponsor</a>&nbsp;
 			<a class="github-button" href="https://github.com/novalagung/dasarpemrogramangolang" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star novalagung/dasarpemrogramangolang on GitHub">Star</a>&nbsp;
 			<a class="github-button" href="https://github.com/novalagung" data-size="large" aria-label="Follow @novalagung on GitHub">Follow @novalagung</a>
